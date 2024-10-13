@@ -1,0 +1,135 @@
+.contribution-popup-outer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.contribution-popup-content {
+  background-color: #f9f9f9;
+  padding: 30px;
+  width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.contribution-popup-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contribution-popup-form-group {
+  margin-bottom: 20px;
+}
+
+.contribution-popup-form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contribution-popup-form-group input[type='date'],
+.contribution-popup-form-group input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contribution-popup-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contribution-popup-cancel-btn {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contribution-popup-save-btn {
+  background-color: #f8c390;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contribution-popup-save-btn:hover {
+  background-color: #f2b67b;
+}
+
+.contribution-popup-cancel-btn:hover {
+  background-color: #b3b3b3;
+}
+
+.contribution-popup-success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-out, fadeOutZoomOut 1s ease-out 3.3s forwards;
+  width: 100%;
+}
+
+.contribution-popup-success-gif {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.contribution-popup-success-text {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-shadow: #333;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutZoomOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}

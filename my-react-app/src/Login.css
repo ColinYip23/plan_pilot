@@ -1,0 +1,132 @@
+.login-page {
+    position: relative;
+    background-image: url('/sp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 1;
+  }
+  
+  .login-header {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 25px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  
+  .website-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .login-form {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, height 0.3s ease;
+  }
+  
+  .login-form.expand {
+    transform: scale(1.05);
+  }
+  
+  .form-lg-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-input:focus {
+    border-color: #f2b67b;
+    outline: none;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background: #f8c390;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .login-button:hover {
+    background: #f2b67b;
+    transform: scale(1.02);
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .loading-text {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #008cba;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

@@ -1,0 +1,177 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 32px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-right: 30px;
+}
+
+.add-task-btn {
+  background-color: #f8c390;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.add-task-btn:hover {
+  background-color: #f2b67b;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-btn {
+  font-size: 16px;
+  padding: 8px;
+  width: 170px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.settings-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.settings-dropdown {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 2px;
+}
+
+.settings-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.settings-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.return-btn {
+  background-color: #f8c390;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.return-btn:hover {
+  background-color: #f2b67b;
+}
+
+.logout-confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.logout-content {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 450px;
+  max-width: 30%;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.logout-message {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #202020;
+  text-align: center;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logout-confirm-btn,
+.logout-cancel-btn {
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.logout-confirm-btn {
+  background-color: #f8c390;
+}
+
+.logout-confirm-btn:hover {
+  background-color: #f2b67b;
+}
+
+.logout-cancel-btn {
+  color: #ffffff !important;
+  background-color: #a0a0a0;
+}
+
+.logout-cancel-btn:hover {
+  background-color: #888888;
+}
